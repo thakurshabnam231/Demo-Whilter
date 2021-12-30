@@ -1,0 +1,14 @@
+{
+  "resourceName": "Whilter",
+  "policyUUID": "b71010c7",
+  "bucketName": "projectdemo75da331a319f45a9a34b844f385b606d",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Trigger72495e2c",
+  "groupAccess": {}
+}
