@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://amplify-projectdemo-dev-162213-deployment.s3.ap-south-1.amazonaws.com/public/index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
