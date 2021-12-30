@@ -1,0 +1,21 @@
+name: demoproject
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{secrets.amplify-projectdemo-dev-162213-deployment }}
+        AWS_ACCESS_KEY_ID: ${{secrets.AKIATZUNEARHK4I7ER2V}}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.4Rr+W31PPOaePAd8mvuph2Tb7ldBlUlNd3sSsiQH}}
+        AWS_REGION: 'ap-south-1'   # optional: defaults to us-east-1
+        SOURCE_DIR: 'public'      # optional: defaults to entire repository
