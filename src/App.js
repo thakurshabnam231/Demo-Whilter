@@ -1,6 +1,7 @@
 
 import React from 'react'
 import GoogleForm from './GoogleForm'
+
 import Upload from './Upload'
 import Amplify, { Auth,Hub } from 'aws-amplify';
 import awsconfig from './aws-exports';
